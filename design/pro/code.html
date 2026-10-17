@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#1b1b25","surface-tint":"#613de0","primary-container":"#7857f8","primary-fixed":"#e6deff","surface-card":"#ffffff","inverse-surface":"#2f3034","surface-container-highest":"#e3e2e6","text-subtle":"#9ca3af","background":"#faf9fd","on-tertiary-container":"#f5fff6","outline-variant":"#c9c4d8","tertiary-container":"#00855b","surface":"#faf9fd","secondary":"#5e5d69","on-tertiary-fixed":"#002113","on-primary-fixed":"#1c0062","on-secondary-container":"#62616e","outline":"#797587","glass-stroke-subtle":"rgba(18, 19, 22, 0.06)","secondary-fixed-dim":"#c7c5d3","inverse-primary":"#cabeff","surface-container-low":"#f5f3f7","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#464651","on-primary-container":"#fffbff","canvas-base":"#f8f9fb","secondary-fixed":"#e3e1ef","error":"#ba1a1a","primary-fixed-dim":"#cabeff","on-background":"#1b1b1f","on-tertiary-fixed-variant":"#005236","tertiary-fixed":"#6ffbbe","on-surface-variant":"#484555","surface-dim":"#dbd9dd","text-muted":"#6b7280","on-tertiary":"#ffffff","slot-disabled":"rgba(18, 19, 22, 0.04)","surface-variant":"#e3e2e6","error-container":"#ffdad6","on-secondary":"#ffffff","surface-container":"#efedf1","secondary-container":"#e1deed","tertiary-fixed-dim":"#4edea3","on-error":"#ffffff","primary":"#5f3add","surface-bright":"#faf9fd","on-primary-fixed-variant":"#4918c8","glass-border":"rgba(255, 255, 255, 0.80)","on-primary":"#ffffff","inverse-on-surface":"#f2f0f4","tertiary":"#006947","surface-container-high":"#e9e7ec","on-surface":"#1b1b1f","on-error-container":"#93000a","glass-bg":"rgba(255, 255, 255, 0.78)"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","space-md":"0.75rem","space-sm":"0.5rem","space-xl":"1.75rem","margin":"1rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"body-lg":["Geologica"],"label-md":["Geologica"],"headline-sm":["Geologica"],"label-sm":["Geologica"],"body-sm":["Geologica"],"headline-md":["Geologica"],"label-lg":["Geologica"],"body-md":["Geologica"],"headline-lg":["Geologica"],"headline-xl":["Geologica"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"600"}],"headline-sm":["17px",{"lineHeight":"22px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"32px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col"><div class="px-space-lg mb-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><span class="material-symbols-outlined text-[20px]">calendar_view_week</span></div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Окошко</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">Admin</span></div></div></div><div class="px-space-md mb-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase text-text-subtle tracking-wider">Основное меню</span></div><nav class="px-space-md space-y-1" data-active-classes="bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashbord-i-statistika" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Дашборд и статистика</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]" data-path="polzovateli-platformy" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Пользователи платформы</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="partnery-i-predpriyatiya" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Партнёры и Предприятия</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mastera" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Мастера</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="zapisi-i-bronirovaniya" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Записи и бронирования</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nastrojki-i-bd" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Настройки и БД</span></a></nav></div><div class="px-space-md"><div class="p-space-md rounded-lg bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">TMA Sync Core</span><span class="font-body-sm text-body-sm text-text-subtle">API 3.4 • Онлайн</span></div></div><span class="material-symbols-outlined text-text-subtle text-[18px]">verified</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-glass-bg backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md w-96"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-subtle text-[18px]">search</span><input class="w-full bg-surface-container-lowest rounded-full pl-9 pr-space-md py-2 font-body-sm text-body-sm text-on-surface placeholder:text-text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-[0_2px_6px_-1px_rgba(18,19,22,0.02)] transition-all" placeholder="Быстрый поиск ID, телефона, мастера..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center bg-surface-container p-1 rounded-full"><button class="px-space-md py-1 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all">Сегодня</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">7 дней</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">Месяц</button></div><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-glass-stroke-subtle"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Александра В.</span><span class="font-label-sm text-label-sm text-text-muted">Супер-администратор</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Utility Bar: Title, Live Counters, Actions -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Пользователи платформы</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          Всего: 48 320 человек
+        </span>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+        +318 новых за 24 часа
+      </div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-card hover:bg-surface-container-high text-on-surface font-label-md text-label-md shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] transition-all" onclick="downloadMockCsv()">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Экспорт CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)] active:scale-95 transition-all" onclick="openProModal('Быстрое назначение', '@telegram_user', 'Клиент', '784019234')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Выдать PRO доступ</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Grid: Table & Quick Drawer -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Center Column: Filters & Data Grid -->
+<div class="2xl:col-span-8 flex flex-col gap-space-md">
+<!-- Filter Surface -->
+<div class="p-space-md rounded-lg bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex flex-col gap-space-md">
+<!-- Search row with instant filters -->
+<div class="flex flex-col lg:flex-row items-center gap-space-sm w-full">
+<div class="relative w-full lg:flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-text-subtle text-[20px]">search</span>
+<input class="w-full bg-surface-container-low rounded-full pl-11 pr-space-md py-2.5 font-body-md text-body-md text-on-surface placeholder:text-text-subtle focus:bg-surface-card focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner transition-all" id="userSearchInput" placeholder="Поиск по Telegram @username, имени, телефону, ID..." type="text"/>
+</div>
+<!-- City Dropdown -->
+<div class="relative w-full lg:w-64">
+<div class="flex items-center justify-between w-full bg-surface-container-low rounded-full px-space-md py-2.5 cursor-pointer hover:bg-surface-container transition-all" onclick="toggleCityDropdown()">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-text-muted">location_on</span>
+<span class="font-label-md text-label-md text-on-surface truncate" id="selectedCityLabel">Все города (48 320)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-subtle">expand_more</span>
+</div>
+<div class="hidden absolute top-full mt-2 left-0 w-full bg-surface-card rounded-2xl p-2 shadow-xl z-30 flex flex-col gap-1" id="cityDropdownList">
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Все города (48 320)')">
+<span>Все города</span>
+<span class="font-label-sm text-label-sm text-text-subtle">48 320</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Москва (24 150)')">
+<span>Москва</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">24 150</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Санкт-Петербург (12 400)')">
+<span>Санкт-Петербург</span>
+<span class="font-label-sm text-label-sm text-text-subtle">12 400</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Казань (4 200)')">
+<span>Казань</span>
+<span class="font-label-sm text-label-sm text-text-subtle">4 200</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Екатеринбург (3 850)')">
+<span>Екатеринбург</span>
+<span class="font-label-sm text-label-sm text-text-subtle">3 850</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-surface-container font-body-sm text-body-sm text-on-surface text-left" onclick="setCityFilter('Другие (3 720)')">
+<span>Другие</span>
+<span class="font-label-sm text-label-sm text-text-subtle">3 720</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Segmented Quick Filters: Role & Tier -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm pt-2">
+<!-- Role Filters -->
+<div class="flex items-center gap-1 p-1 bg-surface-container-low rounded-full overflow-x-auto">
+<button class="role-filter-btn px-4 py-1.5 rounded-full bg-surface-card text-on-surface font-label-md text-label-md shadow-sm transition-all" data-role="all" onclick="filterRole(this)">
+              Все роли
+            </button>
+<button class="role-filter-btn px-4 py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all" data-role="client" onclick="filterRole(this)">
+              Клиенты (38.2k)
+            </button>
+<button class="role-filter-btn px-4 py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all" data-role="master" onclick="filterRole(this)">
+              Мастера (7.9k)
+            </button>
+<button class="role-filter-btn px-4 py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all" data-role="owner" onclick="filterRole(this)">
+              Бизнес (2.2k)
+            </button>
+</div>
+<!-- Tier Filters -->
+<div class="flex items-center gap-1 p-1 bg-surface-container-low rounded-full">
+<span class="px-2 font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">Тариф:</span>
+<button class="tier-filter-btn px-3.5 py-1.5 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-sm transition-all" onclick="filterTier(this)">
+              Все
+            </button>
+<button class="tier-filter-btn px-3.5 py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all" onclick="filterTier(this)">
+              Базовый Free
+            </button>
+<button class="tier-filter-btn px-3.5 py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all" onclick="filterTier(this)">
+<span class="inline-flex items-center gap-1 text-primary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                PRO Бизнес
+              </span>
+</button>
+</div>
+</div>
+</div>
+<!-- User List Table Card -->
+<div class="bg-surface-card rounded-lg shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md">Пользователь</th>
+<th class="py-3.5 px-space-md">Telegram Данные</th>
+<th class="py-3.5 px-space-md">Город</th>
+<th class="py-3.5 px-space-md">Роль</th>
+<th class="py-3.5 px-space-md">Записи / Оборот</th>
+<th class="py-3.5 px-space-md">Регистрация</th>
+<th class="py-3.5 px-space-md">Тариф</th>
+<th class="py-3.5 px-space-md text-right">Действия</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md text-on-surface" id="userTableBody">
+<!-- Row 1: Owner PRO -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up photographic corporate portrait of Elena, an elegant female beauty salon CEO with neatly styled hair and friendly professional smile, soft studio light, lilac and neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdJfZN4P7L5CyMxOVtOO5vuUg7fDP7jCssfuTwgriEE4COESRVaISjUOBQwJyhwAPLUOcNhBWYvvjORhWNsn2fQCfQJCZaVUz7w3ztDpEpgm8y-s5risITd7Blc6E98HgpnXQtA1R2KKx3Z_1aOJ1NK9avbwaa1kV8pFnLUJmLSn5Z_MjK9cWymiJngDOdAq37rcrtBt2pWl5WjjO7NXRq72zGsQJpzLGJR10pTbPNwg5JXzJ8FFY"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Елена Васильева</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (926) 881-42-10</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@elena_beauty_ceo</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 941088241</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Москва</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+                    Владелец сети
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">1 420 записей</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">3 840 000 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">14 янв 2024</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-sm text-label-sm shadow-[0_4px_12px_rgba(95,58,221,0.25)]">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    PRO Бизнес
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-primary-fixed text-primary transition-all" onclick="openProModal('Елена Васильева', '@elena_beauty_ceo', 'Владелец сети', '941088241')" title="Продлить или настроить PRO">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Master PRO -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Alina, a stylish young female nail artist with aesthetic manicure hands and soft ambient daylight, pastel clean background, high fashion aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQjRqctxcpNn3mbMd80JQiwAiz99a9HquPazlm1vQdU04gG_VSphpnmF1X7uO1N0n1lQElaV-qE0zE6fSS51_mRfOq28MNYKyuhEzs2Ez1y5DkwB-J0VescIWJiDqU8oe199ppn5HgQ3QScxoipGKFlbO-KJ1U_gGGbJ_KWfV0ykCxS_2gT-iUlDfqStq3KZZWt1bbribR2w-FVkH-BORUFeEeTuHReKc-eu1JO046RLNcKzl8QF8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Алина Романова</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (911) 203-19-44</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@alina_nails</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 620491823</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Санкт-Петербург</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">brush</span>
+                    Мастер
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">348 записей</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">960 000 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">03 мар 2024</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-sm text-label-sm shadow-[0_4px_12px_rgba(95,58,221,0.25)]">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    PRO Мастер
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-primary-fixed text-primary transition-all" onclick="openProModal('Алина Романова', '@alina_nails', 'Мастер', '620491823')" title="Управление подпиской">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Client Free -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg flex-shrink-0">
+                      АМ
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Алексей Морозов</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (903) 777-12-88</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@morozov_alex</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 104822941</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Москва</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">person</span>
+                    Клиент
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">19 записей</span>
+<span class="font-body-sm text-body-sm text-text-muted">42 500 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">21 сен 2023</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-text-muted font-label-sm text-label-sm">
+                    Free
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-sm text-label-sm transition-all" onclick="openProModal('Алексей Морозов', '@morozov_alex', 'Клиент', '104822941')" title="Выдать PRO">
+                      Выдать PRO
+                    </button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Master Free (Ready to upgrade) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male barber, stylish short beard and dark aesthetic apron, bright studio lighting with clean purple reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVaT8ElAig-whEbqrxRvSClMPs8JpV_n3HeZfiQX-MoIhgm1X-2-4mFDnHLjHivqhGc7lIkV-34ZNITEOZo2N20zaWAJoi9V609DEv9x2PuC76uVipC8gj_OFMjxqJeruXiqb_WcKUU-uXvQwh2RfdecE6-dZRKVeOWxajkv1QwxbazMLTe0OZMGfaVidm4aAKH9YOvgUZASzwe508vX1MYN4BoUSorUT7giO6iIjuGcYETyzN_w"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Дамир Сафин</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (987) 412-00-51</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@damir_barber</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 819230554</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Казань</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">content_cut</span>
+                    Мастер
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">84 записи</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">178 000 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">11 ноя 2024</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-text-muted font-label-sm text-label-sm">
+                    Free (лимит 50%)
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-full bg-primary-fixed hover:bg-primary hover:text-on-primary text-on-primary-fixed font-label-sm text-label-sm transition-all shadow-sm" onclick="openProModal('Дамир Сафин', '@damir_barber', 'Мастер', '819230554')">
+                      Выдать PRO
+                    </button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Owner PRO -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-tint/10 text-primary flex items-center justify-center font-label-lg text-label-lg flex-shrink-0">
+                      ОС
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Ольга Смирнова</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (343) 902-33-11</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@smirnova_spa</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 551980312</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Екатеринбург</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+                    Владелец SPA
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">512 записей</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">1 240 000 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">05 фев 2024</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-sm text-label-sm shadow-[0_4px_12px_rgba(95,58,221,0.25)]">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    PRO Бизнес
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-primary-fixed text-primary transition-all" onclick="openProModal('Ольга Смирнова', '@smirnova_spa', 'Владелец SPA', '551980312')">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Client Free -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg flex-shrink-0">
+                      КТ
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate group-hover:text-primary transition-colors">Кирилл Тимофеев</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">+7 (921) 554-32-09</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>@kirill_tima</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-text-subtle font-mono">TG ID: 419082315</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-md text-body-md text-on-surface-variant">Санкт-Петербург</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">person</span>
+                    Клиент
+                  </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">6 записей</span>
+<span class="font-body-sm text-body-sm text-text-muted">15 400 ₽</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">18 дек 2024</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-text-muted font-label-sm text-label-sm">
+                    Free
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-sm text-label-sm transition-all" onclick="openProModal('Кирилл Тимофеев', '@kirill_tima', 'Клиент', '419082315')">
+                      Выдать PRO
+                    </button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-all">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Bar -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-text-muted">Показано <strong class="text-on-surface font-semibold">1—10</strong> из <strong class="text-on-surface font-semibold">48 320</strong> пользователей</span>
+<div class="hidden md:flex items-center gap-1 ml-4 bg-surface-card px-2.5 py-1 rounded-full shadow-sm text-text-subtle font-label-sm text-label-sm">
+<span>Стр. 1 из 4 832</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-card text-text-subtle hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-all disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center shadow-sm">1</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface hover:bg-surface-container font-label-sm text-label-sm flex items-center justify-center transition-all">2</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface hover:bg-surface-container font-label-sm text-label-sm flex items-center justify-center transition-all">3</button>
+<span class="px-1 text-text-subtle">...</span>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface hover:bg-surface-container font-label-sm text-label-sm flex items-center justify-center transition-all">4832</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface hover:bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Subscription Grant Panel (PRO Side-Card) -->
+<div class="2xl:col-span-4 flex flex-col gap-space-md">
+<!-- Sticky Card for Granting PRO -->
+<div class="p-space-lg rounded-lg bg-surface-card shadow-[0_12px_32px_-4px_rgba(124,92,252,0.12)] relative overflow-hidden flex flex-col gap-space-md" id="proDrawerPanel">
+<!-- Ambient decorative glow -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Выдача подписки PRO</span>
+<span class="font-body-sm text-body-sm text-text-muted">Административный доступ</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+            TMA Admin
+          </span>
+</div>
+<!-- Target User Preview -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" id="drawerAvatarInitial">person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate" id="drawerUserName">Елена Васильева</span>
+<span class="font-body-sm text-body-sm text-primary truncate" id="drawerUserHandle">@elena_beauty_ceo</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-sm flex-shrink-0" id="drawerUserRole">
+            Владелец сети
+          </span>
+</div>
+<!-- 1. Period Selector -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Срок действия тарифа</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="period-pill active-period p-3 rounded-2xl bg-primary text-on-primary flex flex-col items-center justify-center shadow-md transition-all" onclick="selectPeriod(this, '1 мес', '0 ₽ (Ручной промо-период)')">
+<span class="font-label-md text-label-md">1 месяц</span>
+<span class="font-label-sm text-label-sm opacity-90">Тест</span>
+</button>
+<button class="period-pill p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center justify-center transition-all" onclick="selectPeriod(this, '6 мес', 'Скидка 15% за полугодие')">
+<span class="font-label-md text-label-md">6 месяцев</span>
+<span class="font-label-sm text-label-sm text-tertiary">-15%</span>
+</button>
+<button class="period-pill p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center justify-center transition-all" onclick="selectPeriod(this, '1 год', 'Годовой VIP доступ')">
+<span class="font-label-md text-label-md">1 год</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">VIP (-30%)</span>
+</button>
+</div>
+</div>
+<!-- 2. Included Business Features Selection -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Включаемые опции</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline" onclick="toggleAllOptions()">Выбрать все</button>
+</div>
+<div class="space-y-2">
+<!-- Option 1 -->
+<label class="flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-card flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Неограниченные мастера</span>
+<span class="font-body-sm text-body-sm text-text-muted">Снятие лимита в 3 мастера</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 accent-primary rounded-lg cursor-pointer" type="checkbox"/>
+</label>
+<!-- Option 2 -->
+<label class="flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-card flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">CRM и глубокая аналитика</span>
+<span class="font-body-sm text-body-sm text-text-muted">LTV, возвращаемость, чеки</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 accent-primary rounded-lg cursor-pointer" type="checkbox"/>
+</label>
+<!-- Option 3 -->
+<label class="flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-card flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Приоритет в каталоге TMA</span>
+<span class="font-body-sm text-body-sm text-text-muted">Топ выдачи при геопоиске</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 accent-primary rounded-lg cursor-pointer" type="checkbox"/>
+</label>
+<!-- Option 4 -->
+<label class="flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-card flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Рассылка в боте клиентов</span>
+<span class="font-body-sm text-body-sm text-text-muted">Push-напоминания и акции</span>
+</div>
+</div>
+<input class="w-5 h-5 accent-primary rounded-lg cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Reason / Note Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Основание выдачи</label>
+<input class="w-full bg-surface-container-low rounded-2xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" type="text" value="Бонус за расширение сети филиалов (Договор #821)"/>
+</div>
+<!-- Action Confirmation Area -->
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full py-3.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)] active:scale-95 transition-all flex items-center justify-center gap-2" onclick="activateProSuccess()">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Активировать PRO подписку</span>
+</button>
+<div class="hidden p-3 rounded-2xl bg-tertiary/10 text-tertiary flex items-center gap-2 text-label-sm font-label-sm animate-pulse" id="activationSuccessAlert">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Подписка успешно активирована! Синхронизировано в TMA.</span>
+</div>
+</div>
+</div>
+<!-- Quick Stats Card: Ecosystem Overview -->
+<div class="p-space-md rounded-lg bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Активность Telegram Webhook</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 rounded-2xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-text-muted">Активных PRO</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">4 912</div>
+<span class="font-label-sm text-label-sm text-tertiary">+12.4% за мес</span>
+</div>
+<div class="p-3 rounded-2xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-text-muted">Выручка PRO</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-1">9.8M ₽</div>
+<span class="font-label-sm text-label-sm text-primary">MRR баланс</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleCityDropdown() {
+    const list = document.getElementById('cityDropdownList');
+    list.classList.toggle('hidden');
+  }
+
+  function setCityFilter(cityText) {
+    document.getElementById('selectedCityLabel').innerText = cityText;
+    document.getElementById('cityDropdownList').classList.add('hidden');
+  }
+
+  function filterRole(button) {
+    document.querySelectorAll('.role-filter-btn').forEach(btn => {
+      btn.classList.remove('bg-surface-card', 'text-on-surface', 'shadow-sm');
+      btn.classList.add('text-text-muted');
+    });
+    button.classList.add('bg-surface-card', 'text-on-surface', 'shadow-sm');
+    button.classList.remove('text-text-muted');
+  }
+
+  function filterTier(button) {
+    document.querySelectorAll('.tier-filter-btn').forEach(btn => {
+      btn.classList.remove('bg-surface-card', 'text-on-surface', 'shadow-sm');
+      btn.classList.add('text-text-muted');
+    });
+    button.classList.add('bg-surface-card', 'text-on-surface', 'shadow-sm');
+    button.classList.remove('text-text-muted');
+  }
+
+  function openProModal(name, handle, role, tgId) {
+    document.getElementById('drawerUserName').innerText = name;
+    document.getElementById('drawerUserHandle').innerText = handle + ' • ID ' + tgId;
+    document.getElementById('drawerUserRole').innerText = role;
+    
+    // Smooth pulse highlight on drawer
+    const panel = document.getElementById('proDrawerPanel');
+    panel.classList.add('ring-2', 'ring-primary/40');
+    setTimeout(() => {
+      panel.classList.remove('ring-2', 'ring-primary/40');
+    }, 1200);
+
+    // Scroll to panel on smaller viewports
+    if (window.innerWidth < 1536) {
+      panel.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function selectPeriod(button, period, note) {
+    document.querySelectorAll('.period-pill').forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    button.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+    button.classList.remove('bg-surface-container-low', 'text-on-surface');
+  }
+
+  function toggleAllOptions() {
+    const checkboxes = document.querySelectorAll('#proDrawerPanel input[type="checkbox"]');
+    const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+    checkboxes.forEach(cb => cb.checked = !allChecked);
+  }
+
+  function activateProSuccess() {
+    const alertBox = document.getElementById('activationSuccessAlert');
+    alertBox.classList.remove('hidden');
+    setTimeout(() => {
+      alertBox.classList.add('hidden');
+    }, 4000);
+  }
+
+  function downloadMockCsv() {
+    const dummyContent = "data:text/csv;charset=utf-8,ID,Имя,Telegram,Город,Роль,Тариф\n941088241,Елена Васильева,@elena_beauty_ceo,Москва,Бизнес,PRO\n620491823,Алина Романова,@alina_nails,Санкт-Петербург,Мастер,PRO";
+    const encodedUri = encodeURI(dummyContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "okoshko_users_export.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // Live filter mock listener
+  document.getElementById('userSearchInput').addEventListener('input', function(e) {
+    const val = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#userTableBody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(val) ? '' : 'none';
+    });
+  });
+
+  // Close dropdown on outside click
+  window.addEventListener('click', function(e) {
+    if (!e.target.closest('#selectedCityLabel') && !e.target.closest('#cityDropdownList')) {
+      const list = document.getElementById('cityDropdownList');
+      if (list) list.classList.add('hidden');
+    }
+  });
+</script></main></div></body></html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#1b1b25","surface-tint":"#613de0","primary-container":"#7857f8","primary-fixed":"#e6deff","surface-card":"#ffffff","inverse-surface":"#2f3034","surface-container-highest":"#e3e2e6","text-subtle":"#9ca3af","background":"#faf9fd","on-tertiary-container":"#f5fff6","outline-variant":"#c9c4d8","tertiary-container":"#00855b","surface":"#faf9fd","secondary":"#5e5d69","on-tertiary-fixed":"#002113","on-primary-fixed":"#1c0062","on-secondary-container":"#62616e","outline":"#797587","glass-stroke-subtle":"rgba(18, 19, 22, 0.06)","secondary-fixed-dim":"#c7c5d3","inverse-primary":"#cabeff","surface-container-low":"#f5f3f7","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#464651","on-primary-container":"#fffbff","canvas-base":"#f8f9fb","secondary-fixed":"#e3e1ef","error":"#ba1a1a","primary-fixed-dim":"#cabeff","on-background":"#1b1b1f","on-tertiary-fixed-variant":"#005236","tertiary-fixed":"#6ffbbe","on-surface-variant":"#484555","surface-dim":"#dbd9dd","text-muted":"#6b7280","on-tertiary":"#ffffff","slot-disabled":"rgba(18, 19, 22, 0.04)","surface-variant":"#e3e2e6","error-container":"#ffdad6","on-secondary":"#ffffff","surface-container":"#efedf1","secondary-container":"#e1deed","tertiary-fixed-dim":"#4edea3","on-error":"#ffffff","primary":"#5f3add","surface-bright":"#faf9fd","on-primary-fixed-variant":"#4918c8","glass-border":"rgba(255, 255, 255, 0.80)","on-primary":"#ffffff","inverse-on-surface":"#f2f0f4","tertiary":"#006947","surface-container-high":"#e9e7ec","on-surface":"#1b1b1f","on-error-container":"#93000a","glass-bg":"rgba(255, 255, 255, 0.78)"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","space-md":"0.75rem","space-sm":"0.5rem","space-xl":"1.75rem","margin":"1rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"body-lg":["Geologica"],"label-md":["Geologica"],"headline-sm":["Geologica"],"label-sm":["Geologica"],"body-sm":["Geologica"],"headline-md":["Geologica"],"label-lg":["Geologica"],"body-md":["Geologica"],"headline-lg":["Geologica"],"headline-xl":["Geologica"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"600"}],"headline-sm":["17px",{"lineHeight":"22px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"32px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col"><div class="px-space-lg mb-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><span class="material-symbols-outlined text-[20px]">calendar_view_week</span></div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Окошко</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">Admin</span></div></div></div><div class="px-space-md mb-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase text-text-subtle tracking-wider">Основное меню</span></div><nav class="px-space-md space-y-1" data-active-classes="bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]" data-path="dashbord-i-statistika" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Дашборд и статистика</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="polzovateli-platformy" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Пользователи платформы</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="partnery-i-predpriyatiya" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Партнёры и Предприятия</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mastera" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Мастера</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="zapisi-i-bronirovaniya" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Записи и бронирования</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nastrojki-i-bd" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Настройки и БД</span></a></nav></div><div class="px-space-md"><div class="p-space-md rounded-lg bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">TMA Sync Core</span><span class="font-body-sm text-body-sm text-text-subtle">API 3.4 • Онлайн</span></div></div><span class="material-symbols-outlined text-text-subtle text-[18px]">verified</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-glass-bg backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md w-96"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-subtle text-[18px]">search</span><input class="w-full bg-surface-container-lowest rounded-full pl-9 pr-space-md py-2 font-body-sm text-body-sm text-on-surface placeholder:text-text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-[0_2px_6px_-1px_rgba(18,19,22,0.02)] transition-all" placeholder="Быстрый поиск ID, телефона, мастера..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center bg-surface-container p-1 rounded-full"><button class="px-space-md py-1 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all">Сегодня</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">7 дней</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">Месяц</button></div><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-glass-stroke-subtle"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Александра В.</span><span class="font-label-sm text-label-sm text-text-muted">Супер-администратор</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Header Banner & Controls -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm text-text-subtle font-label-sm uppercase tracking-wider">
+<span>TMA Analytics</span>
+<span>•</span>
+<span class="text-tertiary-container font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+          Синхронизация в реальном времени
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Сводка и аналитика платформы</h1>
+<p class="font-body-md text-body-md text-text-muted">Мониторинг бронирований, партнёрской сети и конверсий Telegram Mini App</p>
+</div>
+<!-- Quick Time Filters & Export -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center bg-surface-container-high/60 backdrop-blur-md p-1 rounded-full shadow-sm">
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-text-muted hover:text-on-surface transition-colors" onclick="setGlobalPeriod(this, 'today')">За сегодня</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-text-muted hover:text-on-surface transition-colors" onclick="setGlobalPeriod(this, '7d')">За 7 дней</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-card text-primary font-semibold shadow-sm transition-all" onclick="setGlobalPeriod(this, 'month')">За месяц</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-text-muted hover:text-on-surface transition-colors" onclick="setGlobalPeriod(this, 'year')">За год</button>
+<button class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-text-muted hover:text-on-surface transition-colors" onclick="setGlobalPeriod(this, 'all')">Все время</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-surface-card hover:bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Экспорт отчёта</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Bento Grid (4 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- Card 1: Users -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-text-muted font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">person_outline</span>
+<span>Всего пользователей</span>
+</div>
+<!-- Card inline period toggle -->
+<div class="flex items-center bg-surface-container p-0.5 rounded-full">
+<button class="px-2 py-0.5 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-xs transition-all" onclick="switchKpiTab(this, 'c1', 'month')">Месяц</button>
+<button class="px-2 py-0.5 rounded-full text-text-muted font-label-sm text-label-sm hover:text-on-surface transition-all" onclick="switchKpiTab(this, 'c1', 'year')">Год</button>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight" id="kpi-users-value">48 320</span>
+<span class="inline-flex items-center text-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +14%
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">TG Mini App уникальные сессии</span>
+</div>
+</div>
+<!-- Sparkline Visual -->
+<div class="pt-space-md">
+<div class="flex items-end justify-between h-12 w-full gap-1">
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[32%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[48%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[40%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[65%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[58%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[82%]"></div>
+<div class="w-full bg-primary-fixed/40 hover:bg-primary transition-colors rounded-t-sm h-[74%]"></div>
+<div class="w-full bg-primary rounded-t-sm h-[94%]"></div>
+</div>
+<div class="flex justify-between items-center pt-1 text-text-subtle font-label-sm text-label-sm">
+<span>1 мая</span>
+<span>Прирост Telegram</span>
+<span>Вчера</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Partners -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-text-muted font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">storefront</span>
+<span>Партнерские предприятия</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">412</span>
+<span class="font-body-md text-body-md text-text-subtle">салонов</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Активных филиалов в сети</span>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-text-muted">PRO Подписка: <strong class="text-on-surface font-semibold">298</strong></span>
+<span class="text-primary font-semibold">72.3% PRO</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary rounded-full" style="width: 72.3%;"></div>
+<div class="h-full bg-secondary-fixed rounded-full" style="width: 27.7%;"></div>
+</div>
+</div>
+<!-- Segment quick badges -->
+<div class="grid grid-cols-2 gap-1.5 pt-1">
+<div class="p-2 rounded bg-primary-fixed/30 flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">PRO: 298</span>
+<span class="font-body-sm text-body-sm text-text-subtle">72.3% конверсия</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Free: 114</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Базовый план</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Masters -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-text-muted font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">badge</span>
+<span>Количество мастеров</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">+38 за нед</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">1 845</span>
+<span class="font-body-md text-body-md text-text-subtle">мастеров</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Подтвержденные профили в боте</span>
+</div>
+</div>
+<!-- Master Segment Chips -->
+<div class="space-y-1.5 pt-space-xs">
+<div class="flex items-center justify-between p-2 rounded-full bg-surface-container-low px-3">
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> В салонах
+          </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">1 290</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-full bg-surface-container-low px-3">
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Частные мастера
+          </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">555</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Bookings & GMV -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-text-muted font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span>Всего записей</span>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> 94.6%
+          </span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">134 920</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Успешных броней за всё время</span>
+</div>
+</div>
+<!-- GMV Stats Strip -->
+<div class="pt-space-xs space-y-2">
+<div class="p-2.5 rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">GMV оборот</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">184.2 млн ₽</span>
+</div>
+<div class="h-8 w-px bg-glass-stroke-subtle"></div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">Средний чек</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1 950 ₽</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Charts Section -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-lg">
+<!-- Main Interactive Line Chart (2 Cols) -->
+<div class="xl:col-span-2 bg-surface-card rounded-lg p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Динамика бронирований и регистраций</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">LIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-subtle">Корреляция активности в Telegram Mini App по дням</p>
+</div>
+<!-- Legend and Segment Switcher -->
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface">Бронирования</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="text-on-surface">Регистрации</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Custom High-Precision SVG Chart Area -->
+<div class="w-full relative h-72 flex flex-col justify-end">
+<!-- SVG Canvas with Splines and Gradient Fill -->
+<svg class="w-full h-64 overflow-visible" preserveaspectratio="none" viewbox="0 0 760 220">
+<defs>
+<lineargradient id="primaryGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#5f3add" stop-opacity="0.28"></stop>
+<stop offset="100%" stop-color="#5f3add" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="tertiaryGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00855b" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#00855b" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Guides -->
+<line stroke="rgba(18,19,22,0.04)" stroke-width="1" x1="0" x2="760" y1="20" y2="20"></line>
+<line stroke="rgba(18,19,22,0.04)" stroke-width="1" x1="0" x2="760" y1="70" y2="70"></line>
+<line stroke="rgba(18,19,22,0.04)" stroke-width="1" x1="0" x2="760" y1="120" y2="120"></line>
+<line stroke="rgba(18,19,22,0.04)" stroke-width="1" x1="0" x2="760" y1="170" y2="170"></line>
+<!-- Fill Areas -->
+<polygon fill="url(#primaryGradient)" points="0,180 70,160 140,120 210,135 280,90 350,110 420,70 490,85 560,40 630,60 700,25 760,18 760,210 0,210"></polygon>
+<polygon fill="url(#tertiaryGradient)" points="0,200 70,190 140,175 210,180 280,160 350,165 420,150 490,145 560,130 630,135 700,115 760,110 760,210 0,210"></polygon>
+<!-- Line 1: Bookings (Primary) -->
+<path d="M0,180 Q70,160 140,120 T280,90 T420,70 T560,40 T700,25 L760,18" fill="none" stroke="#5f3add" stroke-linecap="round" stroke-width="3"></path>
+<!-- Line 2: Registrations (Tertiary) -->
+<path d="M0,200 Q70,190 140,175 T280,160 T420,150 T560,130 T700,115 L760,110" fill="none" stroke="#00855b" stroke-dasharray="4 3" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Interactive Highlight Nodes -->
+<circle class="cursor-pointer" cx="560" cy="40" fill="#5f3add" r="5"></circle>
+<circle cx="560" cy="40" fill="#5f3add" fill-opacity="0.2" r="9"></circle>
+<circle class="cursor-pointer" cx="700" cy="25" fill="#5f3add" r="5"></circle>
+<circle cx="700" cy="25" fill="#5f3add" fill-opacity="0.2" r="9"></circle>
+</svg>
+<!-- X-Axis Labels -->
+<div class="flex items-center justify-between text-text-subtle font-label-sm text-label-sm pt-2">
+<span>01 мая</span>
+<span>05 мая</span>
+<span>10 мая</span>
+<span>15 мая</span>
+<span>20 мая</span>
+<span>25 мая</span>
+<span>30 мая</span>
+</div>
+</div>
+<!-- Quick Metrics Ribbon below chart -->
+<div class="grid grid-cols-3 gap-space-md pt-space-lg mt-space-md bg-surface-container-low/60 rounded p-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-text-subtle">Пиковый день</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">24 мая (5 820 записей)</p>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-subtle">Конверсия из TG бота</span>
+<p class="font-headline-sm text-headline-sm text-tertiary-container font-semibold">68.4% визитов</p>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-subtle">Отмен &lt; 2 часов</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">3.2% (норма &lt; 5%)</p>
+</div>
+</div>
+</div>
+<!-- Category Distribution Pie / Donut Chart (1 Col) -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Распределение услуг</h2>
+<span class="material-symbols-outlined text-text-subtle text-[20px]">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-subtle">Сегментация бронирований по категориям</p>
+</div>
+<!-- Donut Chart Inline SVG -->
+<div class="relative flex items-center justify-center my-space-md">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background circle track -->
+<circle class="text-surface-container" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-width="12"></circle>
+<!-- Segment 1: Nail Care (46%) -> 46 * 2.387 = 109.8 (circ: ~238.7) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#5f3add" stroke-dasharray="110 238.7" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Segment 2: Brows & Lashes (28%) -> 66.8 -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#00855b" stroke-dasharray="66.8 238.7" stroke-dashoffset="-113" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Segment 3: Hair & Care (18%) -> 43 -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#7857f8" stroke-dasharray="43 238.7" stroke-dashoffset="-183" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Segment 4: Other (8%) -> 19 -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#c7c5d3" stroke-dasharray="19 238.7" stroke-dashoffset="-228" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Value Overlay -->
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">134.9k</span>
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">Всего услуг</span>
+</div>
+</div>
+<!-- Categories Legend Breakdown -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Ногтевой сервис</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">46%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Брови и ресницы</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">28%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Стрижки и уход</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">18%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Другое</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">8%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Bookings and Activity Table -->
+<div class="bg-surface-card rounded-lg p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Оперативные бронирования в реальном времени</h2>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary-container bg-tertiary-container/10 px-2 py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+            Стрим заказов
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-subtle">Последние события бронирования через TMA бота с быстрой модерацией</p>
+</div>
+<!-- Table Filter and Search Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-subtle text-[16px]">filter_list</span>
+<select class="bg-surface-container-low rounded-full pl-8 pr-8 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option>Все статусы</option>
+<option>Подтверждено</option>
+<option>В процессе</option>
+<option>Завершено</option>
+</select>
+</div>
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="refreshTableData()" title="Обновить список">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="text-text-subtle font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low/70 rounded-full">
+<th class="py-3 px-4 rounded-l-full">Клиент (Telegram)</th>
+<th class="py-3 px-4">Салон / Мастер</th>
+<th class="py-3 px-4">Услуга</th>
+<th class="py-3 px-4">Время слота</th>
+<th class="py-3 px-4">Сумма</th>
+<th class="py-3 px-4">Статус</th>
+<th class="py-3 px-4 rounded-r-full text-right">Действия</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-2">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4 font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-semibold font-label-md text-label-md">
+                  ЕВ
+                </div>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Елена Васильева</span>
+<span class="font-body-sm text-body-sm text-primary">@elena_vas</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Lumière Beauty Lounge</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Мастер: Алина Кравц</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-block px-2.5 py-1 rounded-full bg-surface-container font-body-sm text-body-sm text-on-surface">
+                Снятие + Smart-педикюр
+              </span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-text-subtle">schedule</span>
+<span>Сегодня, 15:30</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface font-semibold">
+              3 200 ₽
+            </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                Подтверждено
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Просмотр детализации">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Переход к карточке">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4 font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-semibold font-label-md text-label-md">
+                  МС
+                </div>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Максим Смирнов</span>
+<span class="font-body-sm text-body-sm text-primary">@max_smirnov</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Chop-Chop Patriki</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Мастер: Денис Гордеев</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-block px-2.5 py-1 rounded-full bg-surface-container font-body-sm text-body-sm text-on-surface">
+                Мужская стрижка + борода
+              </span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-text-subtle">schedule</span>
+<span>Сегодня, 16:00</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface font-semibold">
+              2 800 ₽
+            </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                В процессе
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Просмотр детализации">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Переход к карточке">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4 font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-semibold font-label-md text-label-md">
+                  ДМ
+                </div>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Дарья Миронова</span>
+<span class="font-body-sm text-body-sm text-primary">@daria_miron</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Частный мастер</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Мастер: София Браун</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-block px-2.5 py-1 rounded-full bg-surface-container font-body-sm text-body-sm text-on-surface">
+                Ламинирование ресниц + ботокс
+              </span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-text-subtle">schedule</span>
+<span>Сегодня, 14:00</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface font-semibold">
+              2 100 ₽
+            </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Завершено
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Просмотр детализации">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Переход к карточке">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4 font-body-md text-body-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-semibold font-label-md text-label-md">
+                  АР
+                </div>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Анна Румянцева</span>
+<span class="font-body-sm text-body-sm text-primary">@rumyantseva_a</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Moné Studio Tverskaya</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Мастер: Кристина В.</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-block px-2.5 py-1 rounded-full bg-surface-container font-body-sm text-body-sm text-on-surface">
+                Сложное окрашивание AirTouch
+              </span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-text-subtle">schedule</span>
+<span>Сегодня, 17:15</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface font-semibold">
+              8 500 ₽
+            </td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                Подтверждено
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Просмотр детализации">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Переход к карточке">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Summary Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-sm font-body-sm text-body-sm text-text-subtle">
+<span>Показано 4 из 134 920 записей (обновлено 1 мин назад)</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">Предыдущая</button>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold">1</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">2</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">3</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">Следующая</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter toggle micro-interactions
+  function setGlobalPeriod(button, period) {
+    const parent = button.parentElement;
+    parent.querySelectorAll('button').forEach(btn => {
+      btn.className = 'px-space-md py-1.5 rounded-full font-label-md text-label-md text-text-muted hover:text-on-surface transition-colors';
+    });
+    button.className = 'px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-card text-primary font-semibold shadow-sm transition-all';
+  }
+
+  function switchKpiTab(button, cardId, type) {
+    const parent = button.parentElement;
+    parent.querySelectorAll('button').forEach(btn => {
+      btn.className = 'px-2 py-0.5 rounded-full text-text-muted font-label-sm text-label-sm hover:text-on-surface transition-all';
+    });
+    button.className = 'px-2 py-0.5 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-xs transition-all';
+
+    const userVal = document.getElementById('kpi-users-value');
+    if (userVal) {
+      userVal.textContent = type === 'year' ? '128 400' : '48 320';
+    }
+  }
+
+  function refreshTableData() {
+    const icon = event.currentTarget.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.classList.add('animate-spin');
+      setTimeout(() => icon.classList.remove('animate-spin'), 600);
+    }
+  }
+</script></main></div></body></html>

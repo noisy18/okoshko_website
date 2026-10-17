@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#1b1b25","surface-tint":"#613de0","primary-container":"#7857f8","primary-fixed":"#e6deff","surface-card":"#ffffff","inverse-surface":"#2f3034","surface-container-highest":"#e3e2e6","text-subtle":"#9ca3af","background":"#faf9fd","on-tertiary-container":"#f5fff6","outline-variant":"#c9c4d8","tertiary-container":"#00855b","surface":"#faf9fd","secondary":"#5e5d69","on-tertiary-fixed":"#002113","on-primary-fixed":"#1c0062","on-secondary-container":"#62616e","outline":"#797587","glass-stroke-subtle":"rgba(18, 19, 22, 0.06)","secondary-fixed-dim":"#c7c5d3","inverse-primary":"#cabeff","surface-container-low":"#f5f3f7","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#464651","on-primary-container":"#fffbff","canvas-base":"#f8f9fb","secondary-fixed":"#e3e1ef","error":"#ba1a1a","primary-fixed-dim":"#cabeff","on-background":"#1b1b1f","on-tertiary-fixed-variant":"#005236","tertiary-fixed":"#6ffbbe","on-surface-variant":"#484555","surface-dim":"#dbd9dd","text-muted":"#6b7280","on-tertiary":"#ffffff","slot-disabled":"rgba(18, 19, 22, 0.04)","surface-variant":"#e3e2e6","error-container":"#ffdad6","on-secondary":"#ffffff","surface-container":"#efedf1","secondary-container":"#e1deed","tertiary-fixed-dim":"#4edea3","on-error":"#ffffff","primary":"#5f3add","surface-bright":"#faf9fd","on-primary-fixed-variant":"#4918c8","glass-border":"rgba(255, 255, 255, 0.80)","on-primary":"#ffffff","inverse-on-surface":"#f2f0f4","tertiary":"#006947","surface-container-high":"#e9e7ec","on-surface":"#1b1b1f","on-error-container":"#93000a","glass-bg":"rgba(255, 255, 255, 0.78)"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","space-md":"0.75rem","space-sm":"0.5rem","space-xl":"1.75rem","margin":"1rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"body-lg":["Geologica"],"label-md":["Geologica"],"headline-sm":["Geologica"],"label-sm":["Geologica"],"body-sm":["Geologica"],"headline-md":["Geologica"],"label-lg":["Geologica"],"body-md":["Geologica"],"headline-lg":["Geologica"],"headline-xl":["Geologica"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"600"}],"headline-sm":["17px",{"lineHeight":"22px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"32px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col"><div class="px-space-lg mb-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><span class="material-symbols-outlined text-[20px]">calendar_view_week</span></div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Окошко</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">Admin</span></div></div></div><div class="px-space-md mb-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase text-text-subtle tracking-wider">Основное меню</span></div><nav class="px-space-md space-y-1" data-active-classes="bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashbord-i-statistika" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Дашборд и статистика</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="polzovateli-platformy" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Пользователи платформы</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary text-on-primary font-label-md rounded-full shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)]" data-path="partnery-i-predpriyatiya" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Партнёры и Предприятия</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mastera" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Мастера</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="zapisi-i-bronirovaniya" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Записи и бронирования</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nastrojki-i-bd" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Настройки и БД</span></a></nav></div><div class="px-space-md"><div class="p-space-md rounded-lg bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">TMA Sync Core</span><span class="font-body-sm text-body-sm text-text-subtle">API 3.4 • Онлайн</span></div></div><span class="material-symbols-outlined text-text-subtle text-[18px]">verified</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-glass-bg backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md w-96"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-subtle text-[18px]">search</span><input class="w-full bg-surface-container-lowest rounded-full pl-9 pr-space-md py-2 font-body-sm text-body-sm text-on-surface placeholder:text-text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-[0_2px_6px_-1px_rgba(18,19,22,0.02)] transition-all" placeholder="Быстрый поиск ID, телефона, мастера..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center bg-surface-container p-1 rounded-full"><button class="px-space-md py-1 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all">Сегодня</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">7 дней</button><button class="px-space-md py-1 rounded-full text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all">Месяц</button></div><button class="relative p-2 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-glass-stroke-subtle"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Александра В.</span><span class="font-label-sm text-label-sm text-text-muted">Супер-администратор</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Command Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg mb-space-xl">
+<div class="flex items-center gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface">Партнёры и предприятия</span>
+<span class="px-space-md py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-sm">412 активных студий</span>
+</div>
+<p class="font-body-md text-body-md text-text-muted mt-space-xs">Реестр подключённых салонов, филиалов и синхронизация с Telegram Mini App ботами</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Экспорт реестра (CSV)</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-xl py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all" onclick="document.getElementById('add-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Добавить предприятие</span>
+</button>
+</div>
+</div>
+<!-- KPI & Filter Chips Deck -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between border border-glass-stroke-subtle">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">Всего партнёров</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">412</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +18 за текущий месяц
+        </span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">storefront</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between border border-glass-stroke-subtle">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">PRO Подписка</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">298</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-1">72.3% конверсия в тариф</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between border border-glass-stroke-subtle">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">Базовый (Free)</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">114</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-1">До 3 мастеров в штате</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">spa</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] flex items-center justify-between border border-glass-stroke-subtle">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-subtle uppercase tracking-wider">На верификации</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1">12</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-1">Требуют подтверждения ОГРН</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">pending_actions</span>
+</div>
+</div>
+</div>
+<!-- Filtration Ribbon & Search Tools -->
+<div class="bg-surface-card rounded-2xl p-space-lg shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] mb-space-lg flex flex-col gap-space-md">
+<!-- Status Segmented Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs p-1 bg-surface-container rounded-full overflow-x-auto max-w-full">
+<button class="px-space-md py-1.5 rounded-full bg-surface-card text-on-surface font-label-md text-label-md shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center gap-1.5 transition-all">
+<span>Все предприятия</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-text-muted text-[11px]">412</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>С подпиской PRO</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px]">298</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>Без подписки (Free)</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-text-muted text-[11px]">114</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full text-text-muted hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>На модерации</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container text-[11px]">12</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm text-text-subtle font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Синхронизировано: 1 мин назад</span>
+</div>
+</div>
+<!-- Multi-Filter Bar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-text-subtle text-[20px]">search</span>
+<input class="w-full bg-surface-container-low rounded-full pl-10 pr-4 py-2.5 font-body-sm text-body-sm text-on-surface placeholder:text-text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Поиск по названию, адресу, ИНН, @username владельца..." type="text"/>
+</div>
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
+<option>Все города (Москва, СПб, Казань...)</option>
+<option>Москва</option>
+<option>Санкт-Петербург</option>
+<option>Казань</option>
+<option>Екатеринбург</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-text-subtle text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
+<option>Все категории услуг</option>
+<option>Ногтевой сервис</option>
+<option>Волосы и стайлинг</option>
+<option>Барбершопы</option>
+<option>Косметология и спа</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-text-subtle text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-text-muted hover:text-on-surface transition-colors" title="Сбросить фильтры">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Enterprise Data Table -->
+<div class="bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(18,19,22,0.04)] overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-text-subtle font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Предприятие / Бренд</th>
+<th class="py-space-md px-space-md">Локация</th>
+<th class="py-space-md px-space-md">Владелец (Telegram)</th>
+<th class="py-space-md px-space-md text-center">Штат</th>
+<th class="py-space-md px-space-md">Подписка</th>
+<th class="py-space-md px-space-md">Рейтинг</th>
+<th class="py-space-md px-space-md text-center">Статус</th>
+<th class="py-space-md px-space-lg text-right">Действия</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-glass-stroke-subtle font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-11 h-11 rounded-2xl object-cover shadow-sm ring-1 ring-glass-stroke-subtle" data-alt="Minimalist luxury beauty salon interior with pastel purple tones, beige marble styling and sleek gold mirrors, high architectural aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3nRgbR87yIQzINzc-_T9B-1_ATdBCFQ5w6txRcspx4fZcvfqktJN6igKp-Huxo_2r1x6rd5MBuiM64tD6sHRr4UDQZn1Up0bXfIOpp0iAl8ocQkutVkvUd5pW8Ibt-qBernvNYgltQDwskrSf_sDbpIOXax7k3fIWkmY7PIxVA_0T6dUJCbuthyzIUG1ALs2597bWJkWx2HyEwTsNrnwXqdj3UtRfnYnyLTn2d88zQ_-gqbjgGQA"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Aura Beauty Lounge</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="Верифицированный партнер">verified</span>
+</div>
+<span class="text-text-subtle text-[12px]">ИНН 770481920412 • @aura_beauty_bot</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Москва</span>
+<span class="text-text-subtle text-[12px] truncate max-w-[190px]">Пресненская наб., 12, Башня Восток</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm text-label-sm">
+                  АК
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Алина Королёва</span>
+<a class="text-primary hover:underline text-[12px]" href="#">@alina_aura</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+                14 мастеров
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  PRO Бизнес
+                </span>
+<span class="text-text-subtle text-[11px]">до 18.12.2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-amber-500 text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.96</span>
+<span class="text-text-subtle text-[12px]">(284)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm">
+                Активен
+              </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="База мастеров">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Вход под управлением">
+<span class="material-symbols-outlined text-[20px]">login</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Параметры салона">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-11 h-11 rounded-2xl object-cover shadow-sm ring-1 ring-glass-stroke-subtle" data-alt="Chic modern hair studio barber workspace with dark wooden accents, clean mirror stations and subtle warm spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB844SAEdVXe79N3N3XwoinKhQLyPs4_PHcz_4d3qgCJ2ZlTqDZgIaTp3YIV5Cjj0zHBHpPkI_Dh6uEEGQUT61hQOOt7wQACRGPmaqmK4J-25nDNbg1gMQsRWQhGyecxgfypramHDzEwoIoy2_-n9zos2dHaa-UDIhzC2n4jcZkOSyfEHrLQULG9tDYcLrOzxVDnXbIAYNjdnZ5CUsBZBetjyVlZ1DHUxxk75bvsHJmJw2fIqfHg4"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Blade &amp; Fade Barbershop</span>
+</div>
+<span class="text-text-subtle text-[12px]">ИНН 781290334001 • @bladefade_spb_bot</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Санкт-Петербург</span>
+<span class="text-text-subtle text-[12px] truncate max-w-[190px]">ул. Рубинштейна, 24</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-label-sm text-label-sm">
+                  МГ
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Максим Гордеев</span>
+<a class="text-primary hover:underline text-[12px]" href="#">@max_blade</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+                8 мастеров
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  PRO Бизнес
+                </span>
+<span class="text-text-subtle text-[11px]">до 04.10.2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-amber-500 text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.88</span>
+<span class="text-text-subtle text-[12px]">(142)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm">
+                Активен
+              </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="База мастеров">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Вход под управлением">
+<span class="material-symbols-outlined text-[20px]">login</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Параметры салона">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-11 h-11 rounded-2xl object-cover shadow-sm ring-1 ring-glass-stroke-subtle" data-alt="Light airy manicure nail studio with organic plants, white oak surfaces, ceramic vases and soft diffused sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCenAD_6geQcDCBTEPyXB-6A4m-jMdDAJ-n6fTaOw3JdOS3Br_DvdpgdNrvsNXzifi2hy6gE6k0dd_cGps1Isca0yEsabiDzcs1Ali0F8uXNH97oMXSjsllf8MjAYpD9a2dTE08YbYIHgTAJmD6xDhh0ze50MyUI00IaITy19d-BaBHVVdn_O2YYENrxbIqBresr2Gf8AX6Dd8-K-z0FmPgtEm6rBsy9lOuB4RFQa6u4_-0KHBpQuA"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Мята Nail Lab</span>
+</div>
+<span class="text-text-subtle text-[12px]">ИНН 165538192099 • @myata_nail_bot</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Казань</span>
+<span class="text-text-subtle text-[12px] truncate max-w-[190px]">ул. Баумана, 58</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary font-label-sm text-label-sm">
+                  ЕС
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Елена Сафина</span>
+<a class="text-primary hover:underline text-[12px]" href="#">@elena_myata</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+                3 мастера
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-text-muted">
+<span class="w-2 h-2 rounded-full bg-text-subtle"></span>
+                  Базовый Free
+                </span>
+<span class="text-text-subtle text-[11px]">Бессрочно</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-amber-500 text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.75</span>
+<span class="text-text-subtle text-[12px]">(67)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm">
+                Активен
+              </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="База мастеров">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-primary transition-colors" title="Вход под управлением">
+<span class="material-symbols-outlined text-[20px]">login</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-on-surface transition-colors" title="Параметры салона">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Moderation) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group bg-error-container/5">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-2xl bg-surface-container-high flex items-center justify-center text-text-subtle">
+<span class="material-symbols-outlined text-[22px]">add_photo_alternate</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Élite Cosmetology Hub</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container text-[10px] font-label-sm">Новый</span>
+</div>
+<span class="text-text-subtle text-[12px]">ИНН 667049182312 • Бот не настроен</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Екатеринбург</span>
+<span class="text-text-subtle text-[12px] truncate max-w-[190px]">ул. Ленина, 50Б</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm text-label-sm">
+                  ДВ
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Дарья Воронова</span>
+<a class="text-primary hover:underline text-[12px]" href="#">@voronova_cosm</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+                1 мастер
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+                  PRO (Заявка)
+                </span>
+<span class="text-text-subtle text-[11px]">Ожидает активации</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-text-subtle text-[13px]">—</span>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+                На проверке
+              </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm hover:opacity-90 transition-opacity" title="Одобрить заявку">
+                  Одобрить
+                </button>
+<button class="p-2 rounded-full hover:bg-surface-container text-text-muted hover:text-error transition-colors" title="Отклонить">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-body-sm text-body-sm text-text-muted">Показано 1–4 из 412 предприятий</span>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface flex items-center justify-center hover:bg-surface-container shadow-sm disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">1</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm hover:bg-surface-container shadow-sm">2</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm hover:bg-surface-container shadow-sm">3</button>
+<span class="px-1 text-text-subtle">...</span>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface font-label-sm text-label-sm hover:bg-surface-container shadow-sm">42</button>
+<button class="w-8 h-8 rounded-full bg-surface-card text-on-surface flex items-center justify-center hover:bg-surface-container shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal / Overlay Sheet for Adding New Enterprise -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" id="add-modal">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm" onclick="document.getElementById('add-modal').classList.add('hidden')"></div>
+<!-- Modal Content Card -->
+<div class="relative w-full max-w-3xl bg-surface-card rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col max-h-[921px]">
+<!-- Modal Header -->
+<div class="px-space-xl py-space-lg bg-surface-container-low flex items-center justify-between border-b border-glass-stroke-subtle">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">add_business</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Добавление нового предприятия в БД</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Регистрация контрагента, филиала и привязка управляющего аккаунта</p>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-card hover:bg-surface-container text-text-muted hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('add-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Scrollable) -->
+<div class="p-space-xl overflow-y-auto space-y-space-lg">
+<!-- Form Section 1: Main Info -->
+<div class="space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-subtle">1. Основная информация и бренд</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Название салона / студии *</label>
+<input class="w-full bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Например: Aura Beauty Lounge" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">ИНН предприятия / ИП</label>
+<input class="w-full bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="10 или 12 знаков" type="text"/>
+</div>
+</div>
+</div>
+<!-- Form Section 2: Geo & Address -->
+<div class="space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-subtle">2. Локация и адрес филиала</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Город расположения *</label>
+<input class="w-full bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Москва" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Точный физический адрес (с автокомплитом) *</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded-full pl-4 pr-10 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="ул. Большая Дмитровка, д. 16, стр. 1, этаж 2" type="text"/>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-primary text-[18px]">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Section 3: Categories -->
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface">Категории оказываемых услуг</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<label class="flex items-center gap-space-sm p-3 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Маникюр</span>
+</label>
+<label class="flex items-center gap-space-sm p-3 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Педикюр</span>
+</label>
+<label class="flex items-center gap-space-sm p-3 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Брови и ресницы</span>
+</label>
+<label class="flex items-center gap-space-sm p-3 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Стилисты / Волосы</span>
+</label>
+</div>
+</div>
+<!-- Form Section 4: Telegram Binding & Contacts -->
+<div class="space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-subtle">3. Синхронизация с Telegram и доступ</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Владелец (@username) *</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low rounded-full pl-4 pr-10 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="@username_tg" type="text"/>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px]">person_search</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Контактный телефон</label>
+<input class="w-full bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="+7 (999) 000-00-00" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Telegram-бот студии</label>
+<input class="w-full bg-surface-container-low rounded-full px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="@salon_booking_bot" type="text"/>
+</div>
+</div>
+</div>
+<!-- Form Section 5: Subscription Plan -->
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface">Тарифный план обслуживания</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<label class="relative flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-md">
+<input class="w-4 h-4 text-primary focus:ring-0" name="plan" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Базовый (Free)</span>
+<span class="font-body-sm text-body-sm text-text-muted">До 3 мастеров, базовый бот, 0 ₽/мес</span>
+</div>
+</div>
+</label>
+<label class="relative flex items-center justify-between p-space-md rounded-2xl bg-primary-fixed/30 hover:bg-primary-fixed/50 cursor-pointer transition-all">
+<div class="flex items-center gap-space-md">
+<input checked="" class="w-4 h-4 text-primary focus:ring-0" name="plan" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">PRO Бизнес</span>
+<span class="font-body-sm text-body-sm text-text-muted">Без ограничений мастеров, SMS, аналитика</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Популярно</span>
+</label>
+</div>
+</div>
+<!-- Form Section 6: Photo Upload Area -->
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface">Фото фасада и интерьера</label>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container/70 transition-colors flex flex-col items-center justify-center text-center cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[36px] mb-2">cloud_upload</span>
+<span class="font-label-md text-label-md text-on-surface">Перетащите фотографии сюда или выберите на диске</span>
+<span class="font-body-sm text-body-sm text-text-subtle mt-1">Поддерживаются PNG, JPG, WebP до 10 МБ (до 5 файлов)</span>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action Deck -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-end gap-space-md border-t border-glass-stroke-subtle">
+<button class="px-space-lg py-2.5 rounded-full bg-surface-card hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="document.getElementById('add-modal').classList.add('hidden')">
+          Отмена
+        </button>
+<button class="px-space-xl py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(124,92,252,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all" onclick="document.getElementById('add-modal').classList.add('hidden')">
+          Сохранить предприятие в базу данных
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
